@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container p {
+    margin-top: 20px;
+    color: white;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, minmax(200px, auto));
+    grid-template-areas: 
+                        "first first second second second second second second"
+                        "first first third third third forth forth forth"
+                        "fifth fifth fifth fifth fifth forth forth forth";
+}
+
+.box {
+    background-color: rgb(85, 84, 84);
+}
+.box-1 {
+    grid-area: first;
+}
+
+.box-2 {
+    grid-area: second;
+
+}
+
+.box-3 {
+    grid-area: third;
+
+}
+
+.box-4 {
+    grid-area: forth;
+
+}
+
+.box-5 {
+    grid-area: fifth;
+
+}
