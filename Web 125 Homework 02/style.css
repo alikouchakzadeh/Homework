@@ -1,0 +1,19 @@
+
+table , th , tr {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 10px 10px 10px currentColor;
+    font-weight: 900;
+}
